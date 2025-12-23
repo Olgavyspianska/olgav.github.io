@@ -4,94 +4,121 @@
   <meta charset="UTF-8">
   <title>Olga Home Cleaning</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f7f6;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
       color: #333;
     }
-
     header {
-      background: linear-gradient(135deg, #5fb3a2, #7ed1c1);
+      background: #5fb3a2;
       color: white;
-      padding: 50px 20px;
       text-align: center;
+      padding: 60px 20px;
     }
-
     header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      font-size: 2.8rem;
+      margin: 0;
     }
-
     header p {
-      font-size: 1.2em;
+      font-size: 1.2rem;
+      margin: 10px 0;
     }
-
+    .btn-primary {
+      background: #ffffff;
+      color: #5fb3a2;
+      padding: 15px 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 15px;
+    }
     section {
       padding: 50px 20px;
       max-width: 1000px;
       margin: auto;
     }
-
     h2 {
       color: #5fb3a2;
-      margin-bottom: 20px;
+      text-align: center;
+      margin-bottom: 30px;
     }
-
-    .services {
+    .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
     }
-
-    .card {
-      background: white;
+    .service-card {
+      background: #fff;
       padding: 25px;
       border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       transition: transform 0.3s;
     }
-
-    .card:hover {
+    .service-card:hover {
       transform: translateY(-5px);
     }
-
-    .cta {
-      background: #5fb3a2;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-
-    .cta a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 30px;
-      background: white;
+    .service-card h3 {
+      margin-top: 0;
       color: #5fb3a2;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 30px;
     }
-
+    .features-list {
+      list-style: none;
+      padding: 0;
+    }
+    .features-list li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+    .features-list li:before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #5fb3a2;
+    }
     footer {
       background: #222;
       color: white;
       text-align: center;
       padding: 20px;
-      font-size: 0.9em;
+      font-size: 0.9rem;
     }
   </style>
 </head>
-
 <body>
 
 <header>
   <h1>Olga Home Cleaning</h1>
-  <p>Professional • Reliable • Friendly.</p> <!-- додана крапка -->
+  <p>Your Trusted Cleaning Professionals in Chicago</p>
+  <a href="mailto:your@email.com" class="btn-primary">Request a Free Estimate</a>
 </header>
 
 <section>
-  <h2>Our Servic
+  <h2>Our Cleaning Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Recurring Cleaning</h3>
+      <p>Weekly, bi‑weekly, or custom schedules to keep your home spotless all year.</p>
+    </div>
+    <div class="service-card">
+      <h3>One‑Time Cleaning</h3>
+      <p>Perfect for special events, seasonal deep clean, or just catching up.</p>
+    </div>
+    <div class="service-card">
+      <h3>Move‑In / Move‑Out Cleaning</h3>
+      <p>Leave your old place flawless or start fresh in the new one.</p>
+    </div>
+    <div class="service-card">
+      <h3>Apartment & Condo Cleaning</h3>
+      <p>Efficient, reliable cleaning tailored for busy city living.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Why Choose Us</h2>
+  <u
